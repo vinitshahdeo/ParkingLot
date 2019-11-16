@@ -1,0 +1,21 @@
+{
+  "name": "parking_lot",
+  "version": "1.0.0",
+  "description": "[GOJEK Assignment] Parking lot design problem",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "\"mocha tests/specs.js\""
+  },
+  "keywords": [
+    "parking",
+    "lot",
+    "gojek",
+    "nodejs",
+    "oops"
+  ],
+  "author": "Vinit Shahdeo <vinitshahdeo@gmail.com>",
+  "license": "ISC"
+}

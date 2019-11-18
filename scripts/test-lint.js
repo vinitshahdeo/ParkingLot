@@ -40,10 +40,13 @@ module.exports = function (exit) {
      */
     function (report, next) {
       var errorReport = ESLintCLIEngine.getErrorResults(report.results);
+
       // log the result to CLI
       console.info(ESLintCLIEngine.getFormatter()(report.results));
+
       // log the success of the parser if it has no errors
       (errorReport && !errorReport.length) && console.info('eslint ok!');
+
       // ensure that the exit code is non zero in case there was an error
       next(Number(errorReport && errorReport.length) || 0);
     }

@@ -36,14 +36,12 @@ describe('Testing Functions in ParkingLot class', function () {
   });
 
   it('Allocating Parking to User 1', function (done) {
-      // parkingLot.createParkingLot(commands[0]);
       var ele = parkingLot.parkCar(commands[1]);
       assert.equal(ele, 1, 'these numbers are equal');
       done();
   });
 
   it('Allocating Parking to User 2', function (done) {
-      // parkingLot.createParkingLot(commands[0]);
       var ele = parkingLot.parkCar(commands[2]);
       assert.equal(ele, 2);
       done();
@@ -93,9 +91,12 @@ describe('Testing Functions in ParkingLot class', function () {
   });
 
   it('Allocating Parking to User 8. Should indicate Parking is full.', function (done) {
-      var ele = parkingLot.parkCar(commands[10]);
-      assert.equal(ele, null);
-      assert.notEqual(ele, 8);
+      try {
+        var ele = parkingLot.parkCar(commands[10]);
+      }
+      catch (err) {
+        assert.notEqual(ele, 8);
+      }
       done();
   });
 

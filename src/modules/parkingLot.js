@@ -3,26 +3,34 @@ var Car = require('./car.js');
 /**
  * @description a base class for Parking lot
  */
+
 class ParkingLot {
 	// will initialize it later, first writing the business logic
 	constructor () {
-		this.totalParkings = 0;
-	}
-	createParkingLot (input) {
-        var totalParkings = parseInt(input.split(" ")[1]);
-        return totalParkings;
+        this.totalParkings = 0;
+        this.parkingArr = new Array();
     }
-    parkCar (totalParkings, parkingArr, len, input) {
-    	if(totalParkings > 0){
+    // TODO: What if input is not a number
+	createParkingLot (input) {
+        this.totalParkings = parseInt(input.split(" ")[1]);
+        for(var i=0; i < this.totalParkings; i++){
+            this.parkingArr.push(null);
+        }
+        return this.totalParkings;
+    }
+    parkCar (input) {
+        var len = this.parkingArr.length;
+    	if(this.totalParkings > 0){
 			var car, carNumber, carColor;
-	    	if(this.findNearestAvailableSlot(parkingArr) == true){
+	    	if(this.findNearestAvailableSlot(this.parkingArr) == true){
+                // use binary search here
 		  		for(var i=0;i<len;i++){
-		  			if(parkingArr[i] == null){
+		  			if(this.parkingArr[i] == null){
 						  // var inp = input.split(" ")[1] + ":" + input.split(" ")[2];
 						carNumber = input.split(" ")[1];
 						carColor = input.split(" ")[2]
 						car = new Car(carNumber, carColor);
-						parkingArr[i] = car
+						this.parkingArr[i] = car
 						i = i + 1;
 						return i;
 		  			}
@@ -35,11 +43,11 @@ class ParkingLot {
 	  		return null;
 	  	}
     }
-    leaveCar (totalParkings, parkingArr, input){
-    	if(totalParkings > 0){
+    leaveCar (input){
+    	if(this.totalParkings > 0){
 	    	var index = input.split(" ")[1] - 1;
-		    if (index > -1 && index <= parkingArr.length) {
-			    parkingArr[index] = null;
+		    if (index > -1 && index <= this.parkingArr.length) {
+			    this.parkingArr[index] = null;
 			    index = index + 1;
 			    return index;
 			}
@@ -48,15 +56,15 @@ class ParkingLot {
 			return null;
 		}
     }
-    getParkingStatus (totalParkings, parkingArr){
+    getParkingStatus (){
     	var arr = new Array();
-    	if(totalParkings > 0) {
+    	if(this.totalParkings > 0) {
 			arr.push("Slot No. Registration No. Color ");
 			// use binary search here
-        	for(var i=0; i<parkingArr.length;i++){
-        		if(parkingArr[i] != null){
+        	for(var i = 0; i < this.parkingArr.length;i++){
+        		if(this.parkingArr[i] != null){
         			var e = i + 1;
-        			arr.push(e + ".  " + parkingArr[i].NUMBER + "  " + parkingArr[i].COLOR);
+        			arr.push(e + ".  " + this.parkingArr[i].NUMBER + "  " + this.parkingArr[i].COLOR);
         		}
         	}
         	return arr;
@@ -64,13 +72,13 @@ class ParkingLot {
 			return [];
 		}
     }
-    getCarsWithSameColor (totalParkings, parkingArr, input){
+    getCarsWithSameColor (input){
 		//TODO what if car of particular color is not present
-    	if(totalParkings > 0){
+    	if(this.totalParkings > 0){
 	        var displayArr = new Array();
-	        for(var i=0; i< parkingArr.length; i++){
-	        	if(parkingArr[i] && parkingArr[i].COLOR.toLowerCase() == input.split(" ")[1].toLowerCase()){
-	        		displayArr.push(parkingArr[i].NUMBER);
+	        for(var i = 0; i < this.parkingArr.length; i++){
+	        	if(this.parkingArr[i] && this.parkingArr[i].COLOR.toLowerCase() == input.split(" ")[1].toLowerCase()){
+	        		displayArr.push(this.parkingArr[i].NUMBER);
 	        	}
 	        }
     		return displayArr.join(", ");
@@ -78,37 +86,39 @@ class ParkingLot {
 			return null;
 		}
     }
-    getSlotsWithSameColorCar( totalParkings, parkingArr, input) {
-    	if(totalParkings > 0){
+    getSlotsWithSameColorCar(input) {
+    	if (this.totalParkings > 0) {
 	    	var displayArr = new Array();
-	        for(var i=0; i< parkingArr.length; i++){
-	        	if(parkingArr[i] && parkingArr[i].COLOR.toLowerCase() == input.split(" ")[1].toLowerCase()){
+	        for (var i=0; i < this.parkingArr.length; i++){
+	        	if ( this.parkingArr[i] && this.parkingArr[i].COLOR.toLowerCase() == input.split(" ")[1].toLowerCase()) {
 	        		displayArr.push(i+1);
 	        	}
 	        }
         	return displayArr.join(', ');
-        }else{
+        }
+        else {
 			return null;
 		}
     }
-    getSlotByCarNumber (totalParkings, parkingArr, input){
+    getSlotByCarNumber (input){
 		// TODO:  What parking lot is empty
-		if(totalParkings > 0){
+		if (this.totalParkings > 0) {
 	    	var ele = "Not found";
-	        for(var i=0; i< parkingArr.length; i++){
-	        	if(parkingArr[i] && parkingArr[i].NUMBER == input.split(" ")[1]){
+	        for (var i=0; i < this.parkingArr.length; i++){
+	        	if(this.parkingArr[i] && this.parkingArr[i].NUMBER == input.split(" ")[1]){
 	        		ele = i + 1;
 	        	}
 	        }
         	return ele;
-        } else {
+        } 
+        else {
 			return null;
 		}
 	}
 	findNearestAvailableSlot(parkingArr){
 		var ele = false;
-		for(var i=0; i<parkingArr.length; i++){
-			if(parkingArr[i] == null){
+		for(var i = 0; i < this.parkingArr.length; i++){
+			if (this.parkingArr[i] == null){
 				ele = true;
 			}
 		}

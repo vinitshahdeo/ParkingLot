@@ -10,8 +10,8 @@ var parkingLot = new Parking();
 
 
 
-var totalParkings = 0;
-var parkingArr = new Array();
+// var totalParkings = 0;
+// var parkingArr = new Array();
 
 
 // to avoid memory leaks
@@ -58,14 +58,10 @@ function commands(input){
     switch (n) {
         case "create_parking_lot":
             totalParkings = parkingLot.createParkingLot(input);
-            for(var i=0; i < totalParkings; i++){
-                parkingArr.push(null);
-            }
             console.log("Created a parking lot with " + totalParkings  + " slots.");
             break;
         case "park":
-            var len = parkingArr.length;
-            slotNumber = parkingLot.parkCar(totalParkings, parkingArr, len, input);
+            slotNumber = parkingLot.parkCar(input);
             if(slotNumber){
                 console.log("Allocated slot number: " + slotNumber);
             }else{
@@ -73,7 +69,7 @@ function commands(input){
             }
             break;
         case "leave":
-            slotNumber = parkingLot.leaveCar(totalParkings, parkingArr, input);
+            slotNumber = parkingLot.leaveCar(input);
             if(slotNumber){
                 console.log("Slot number " + slotNumber + " is free.");
             }else{
@@ -81,7 +77,7 @@ function commands(input){
             }
             break;
         case "status":
-            var values = parkingLot.getParkingStatus(totalParkings, parkingArr);
+            var values = parkingLot.getParkingStatus();
             if(values.length > 1){
                 console.log(values.join("\n"));
             }
@@ -90,7 +86,7 @@ function commands(input){
             }
             break;
         case "registration_numbers_for_cars_with_colour":
-            var regNum = parkingLot.getCarsWithSameColor(totalParkings, parkingArr, input);
+            var regNum = parkingLot.getCarsWithSameColor(input);
             if(regNum){
                 console.log(regNum);
             }else{
@@ -98,7 +94,7 @@ function commands(input){
             }
             break;
         case "slot_numbers_for_cars_with_colour":
-            slotNumber = parkingLot.getSlotsWithSameColorCar(totalParkings, parkingArr, input);
+            slotNumber = parkingLot.getSlotsWithSameColorCar(input);
             if(slotNumber){
                 console.log(slotNumber);
             }
@@ -107,7 +103,7 @@ function commands(input){
             }
             break;
         case "slot_number_for_registration_number":
-            slotNumber = parkingLot.getSlotByCarNumber(totalParkings, parkingArr, input);
+            slotNumber = parkingLot.getSlotByCarNumber(input);
             if(slotNumber){
                 console.log(slotNumber);
             } else {

@@ -36,7 +36,7 @@ async.series([
     }
 ], (err) => {
     if (err) {
-        console.log(chalk.red('Tests failed due to error occured '));
+        console.log(chalk.red('Tests failed!'));
     }
     else {
         console.log(chalk.green.bold('All the tests has passed successfully'));

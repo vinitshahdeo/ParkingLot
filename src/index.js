@@ -1,22 +1,19 @@
+/**
+ * @description requiring native Node modules
+ */
+const fs = require('fs'),
+	rl = require("readline");
+
+var	elements = process.argv; // processing command line inputs
+
+/**
+ * @description importing the parkingLot class
+ */
+var Parking = require('./modules/parkingLot.js'),
+	parkingLot = new Parking();
+
+// to avoid memory leaks errors, deafult max listeners = 10
 require('events').EventEmitter.defaultMaxListeners = 0
-
-var fs = require('fs');
-var elements = process.argv;
-var rl = require("readline");
-
-var Parking = require('./modules/parkingLot.js');
-
-var parkingLot = new Parking();
-
-
-
-// var totalParkings = 0;
-// var parkingArr = new Array();
-
-
-// to avoid memory leaks
-process.setMaxListeners(0);
-
 
 // TODO: What if parking lot is not created
 // TODO: Car with same numbers

@@ -2,9 +2,9 @@
  * @description requiring native Node modules
  */
 const fs = require('fs'),
-	rl = require("readline");
+	readLine = require("readline");
 
-var	elements = process.argv; // processing command line inputs
+var	commandLineInputs = process.argv; // processing command line inputs
 
 /**
  * @description importing the parkingLot class
@@ -18,27 +18,28 @@ require('events').EventEmitter.defaultMaxListeners = 0
 // TODO: What if parking lot is not created
 // TODO: Car with same numbers
 
-if (elements[elements.length - 1] == 'true'){
-    interact();
+if (commandLineInputs[commandLineInputs.length - 1] == 'true'){
+    openInteractiveConsole();
 } 
 else {
-    fs.readFile(elements[2], 'utf-8', function (err, data) {
+    fs.readFile(commandLineInputs[2], 'utf-8', function (err, data) {
         var arr = data.split("\n");
-           for (var i=0; i < arr.length; i++){
-            commands(arr[i]);
-           }
+		for (var i=0; i < arr.length; i++){
+			processUserCommands(arr[i]);
+		}
     });
 }
 
 /**
  * @description called when users want to interact via console
+ * it process one command at a time
  */
-function interact(){
-    if(elements[elements.length - 1] == 'true'){
-        var prompts = rl.createInterface({ input: process.stdin, output: process.stdout, terminal: false });
-        
+function openInteractiveConsole(){
+    if(commandLineInputs[commandLineInputs.length - 1] == 'true'){
+        var prompts = readLine.createInterface({ input: process.stdin, output: process.stdout, terminal: false });
+        // option for user to enter commands
         prompts.question("Input: ", function (data) {
-            commands(data);
+            processUserCommands(data);
         });
     }
 }
@@ -49,61 +50,65 @@ function interact(){
  * @description driver function for different commands for entered by users
  * calls respective functions of ParkingLot class based on commands
  */
-function commands(input){
-	var n = input.split(" ")[0],
-		slotNumber;
-    switch (n) {
+function processUserCommands(input){
+	var userCommand = input.split(" ")[0],
+		parkingSlotNumber;
+    switch (userCommand) {
         case "create_parking_lot":
-            totalParkings = parkingLot.createParkingLot(input);
-            console.log("Created a parking lot with " + totalParkings  + " slots.");
+            totalParkingSlots = parkingLot.createParkingLot(input);
+            console.log("Created a parking lot with " + totalParkingSlots  + " slots.");
             break;
         case "park":
-            slotNumber = parkingLot.parkCar(input);
-            if(slotNumber){
-                console.log("Allocated slot number: " + slotNumber);
-            }else{
+            parkingSlotNumber = parkingLot.parkCar(input);
+            if(parkingSlotNumber){
+                console.log("Allocated slot number: " + parkingSlotNumber);
+			}
+			else {
                 console.log("Sorry, parking lot is full");
             }
             break;
         case "leave":
-            slotNumber = parkingLot.leaveCar(input);
-            if(slotNumber){
-                console.log("Slot number " + slotNumber + " is free.");
-            }else{
+            parkingSlotNumber = parkingLot.leaveCar(input);
+            if (parkingSlotNumber) {
+                console.log("Slot number " + parkingSlotNumber + " is free.");
+			}
+			else {
                 console.log("Sorry, parking lot is full");
             }
             break;
         case "status":
-            var values = parkingLot.getParkingStatus();
-            if(values.length > 1){
-                console.log(values.join("\n"));
+            var parkingSlotStatus = parkingLot.getParkingStatus();
+            if (parkingSlotStatus.length > 1) {
+                console.log(parkingSlotStatus.join("\n"));
             }
-            else{
+            else {
                 console.log("Sorry, parking lot is empty"); // what if it's empty
             }
             break;
         case "registration_numbers_for_cars_with_colour":
-            var regNum = parkingLot.getCarsWithSameColor(input);
-            if(regNum){
-                console.log(regNum);
-            }else{
+            var registrationNumbers = parkingLot.getCarsWithSameColor(input);
+            if (registrationNumbers) {
+                console.log(registrationNumbers);
+			}
+			else {
                 console.log("Sorry, Car with given color is not found");
             }
             break;
         case "slot_numbers_for_cars_with_colour":
-            slotNumber = parkingLot.getSlotsWithSameColorCar(input);
-            if(slotNumber){
-                console.log(slotNumber);
+            parkingSlotNumbers = parkingLot.getSlotsWithSameColorCar(input);
+            if (parkingSlotNumbers) {
+                console.log(parkingSlotNumbers);
             }
             else {
                 console.log("Sorry, Car with given color is not found");
             }
             break;
         case "slot_number_for_registration_number":
-            slotNumber = parkingLot.getSlotByCarNumber(input);
-            if(slotNumber){
-                console.log(slotNumber);
-            } else {
+            parkingSlotNumber = parkingLot.getSlotByCarNumber(input);
+            if (parkingSlotNumber) {
+                console.log(parkingSlotNumber);
+			} 
+			else {
                 console.log("Sorry, Car with given registration number is not found");
             }
             break;
@@ -114,5 +119,5 @@ function commands(input){
             console.log(n, 'is not a recognized command');
             break;
     }
-    interact();
+    openInteractiveConsole();
 }

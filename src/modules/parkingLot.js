@@ -3,12 +3,11 @@ var Car = require('./car.js');
 /**
  * @description a base class for Parking lot
  */
-
 class ParkingLot {
 	// will initialize it later, first writing the business logic
 	constructor () {
-        this.totalParkings = 0;
-        this.parkingArr = new Array();
+        this.totalParkings = 0; // maximum parking slots allowed
+        this.parkingArr = new Array(); // array for parking slots
     }
 
     // TODO: What if input is not a number

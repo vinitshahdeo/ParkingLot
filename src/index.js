@@ -116,7 +116,7 @@ function processUserCommands(input){
 			process.exit(0);
 			break;
         default: 
-            console.log(n, 'is not a recognized command');
+            console.log(input, 'is not a recognized command');
             break;
     }
     openInteractiveConsole();

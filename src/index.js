@@ -124,5 +124,4 @@ function processUserCommands (input) {
             console.log(chalk.red.bold(input, 'is not a recognized command'));
             break;
     }
-    openInteractiveConsole();
 }

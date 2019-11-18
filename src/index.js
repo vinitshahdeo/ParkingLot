@@ -60,34 +60,45 @@ function processUserCommands (input) {
 		parkingSlotNumbers;
     switch (userCommand) {
         case 'create_parking_lot':
-            totalParkingSlots = parkingLot.createParkingLot(input);
-            console.log(chalk.yellow.bold('Created a parking lot with ' + totalParkingSlots + ' slots.'));
+            try {
+                totalParkingSlots = parkingLot.createParkingLot(input);
+                console.log(chalk.yellow.bold('Created a parking lot with ' + totalParkingSlots + ' slots.'));
+            }
+            catch (err) {
+                console.log(chalk.red.bold(err.message));
+            }
+            
             break;
         case 'park':
-            parkingSlotNumber = parkingLot.parkCar(input);
-            if (parkingSlotNumber) {
+            try {
+                parkingSlotNumber = parkingLot.parkCar(input);
                 console.log(chalk.green('Allocated slot number: ' + parkingSlotNumber));
-			}
-			else {
-                console.log(chalk.red('Sorry, parking lot is full'));
+            }
+            catch (err) {
+                console.log(chalk.red.bold(err.message));
             }
             break;
         case 'leave':
-            parkingSlotNumber = parkingLot.leaveCar(input);
-            if (parkingSlotNumber) {
+            try {
+                parkingSlotNumber = parkingLot.leaveCar(input);
                 console.log(chalk.blue('Slot number ' + parkingSlotNumber + ' is free.'));
-			}
-			else {
-                console.log(chalk.red('Sorry, parking lot is full'));
+            }
+            catch (err) {
+                console.log(chalk.red('Sorry, parking lot is empty'));
             }
             break;
         case 'status':
-            var parkingSlotStatus = parkingLot.getParkingStatus();
-            if (parkingSlotStatus.length > 1) {
-                console.log(chalk.bgMagenta(parkingSlotStatus.join('\n')));
+            try {
+                var parkingSlotStatus = parkingLot.getParkingStatus();
+                if (parkingSlotStatus.length > 1) {
+                    console.log(chalk.bgMagenta(parkingSlotStatus.join('\n')));
+                }
+                else {
+                    console.log(chalk.yellow('Sorry, parking lot is empty')); // what if it's empty
+                }
             }
-            else {
-                console.log(chalk.yellow('Sorry, parking lot is empty')); // what if it's empty
+            catch (err) {
+                console.log(chalk.red.bold(err.message));
             }
             break;
         case 'registration_numbers_for_cars_with_colour':

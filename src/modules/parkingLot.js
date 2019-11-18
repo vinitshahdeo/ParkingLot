@@ -12,7 +12,11 @@ class ParkingLot {
 
     // TODO: What if input is not a number
 	createParkingLot (input) {
-        this.MAX_PARKING_SLOTS = parseInt(input.split(' ')[1]);
+		this.MAX_PARKING_SLOTS = parseInt(input.split(' ')[1]);
+		if (this.MAX_PARKING_SLOTS === 0) {
+			// minimum: 1 slot
+			throw new Error('Minimum one slot is required to create parking slot');
+		}
         for (var i = 0; i < this.MAX_PARKING_SLOTS; i++) {
             this.parkingSlots.push(null);
         }
@@ -35,12 +39,13 @@ class ParkingLot {
 						return i;
 		  			}
 		  		}
-		  	} else {
-		  		return null;
+			  } 
+			else {
+		  		throw new Error('Sorry, parking lot is full');
 		  	}
           }
           else {
-	  		return null;
+	  		throw new Error('Minimum one slot is required to create parking slot');
 	  	}
     }
     leaveCar (input) {
@@ -53,7 +58,7 @@ class ParkingLot {
 			}
 		}
 		else {
-			return null;
+			throw new Error('Sorry, parking lot is empty');
 		}
     }
     getParkingStatus () {
@@ -69,8 +74,9 @@ class ParkingLot {
         		}
         	}
         	return arr;
-		} else {
-			return [];
+		} 
+		else {
+			throw new Error('Sorry, parking lot is empty');
 		}
     }
     getCarsWithSameColor (input) {
@@ -83,7 +89,8 @@ class ParkingLot {
 	        	}
 	        }
     		return displayArr.join(', ');
-		} else {
+		} 
+		else {
 			return null;
 		}
     }

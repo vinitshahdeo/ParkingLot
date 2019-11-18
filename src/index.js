@@ -19,10 +19,7 @@ require('events').EventEmitter.defaultMaxListeners = 0;
 // TODO: What if parking lot is not created
 // TODO: Car with same numbers
 
-if (commandLineInputs[commandLineInputs.length - 1] == 'true') {
-    openInteractiveConsole();
-}
-else {
+if (commandLineInputs[commandLineInputs.length - 1].endsWith('.txt')) {
     fs.readFile(commandLineInputs[2], 'utf-8', function (err, data) {
         if (err) {
             console.log('Error in reading file');
@@ -33,20 +30,21 @@ else {
 		}
     });
 }
+else {
+    openInteractiveConsole();
+}
 
 /**
  * @description called when users want to interact via console
  * it process one command at a time
  */
 function openInteractiveConsole () {
-    if (commandLineInputs[commandLineInputs.length - 1] == 'true') {
-        var prompts = readLine.createInterface({ input: process.stdin, output: process.stdout, terminal: false });
+    var prompts = readLine.createInterface({ input: process.stdin, output: process.stdout, terminal: false });
 
-        // option for user to enter commands
-        prompts.question('Input: ', function (data) {
-            processUserCommands(data);
-        });
-    }
+    // option for user to enter commands
+    prompts.question('Input: ', function (data) {
+        processUserCommands(data);
+    });
 }
 
 /**

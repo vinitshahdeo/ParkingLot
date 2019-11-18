@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "\"mocha tests/specs.js\""
+    "test": "\"mocha tests/specs.js\"",
+    "test-lint": "node scripts/test-lint.js"
   },
   "keywords": [
     "parking",
@@ -17,5 +18,10 @@
     "oops"
   ],
   "author": "Vinit Shahdeo <vinitshahdeo@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^3.1.0",
+    "eslint": "^6.6.0",
+    "shelljs": "^0.8.3"
+  }
 }

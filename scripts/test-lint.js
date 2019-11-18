@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const async = require('async'),
   sh = require('shelljs'),
+  chalk = require('chalk'),
   ESLintCLIEngine = require('eslint').CLIEngine,
 
   /**
@@ -16,7 +17,7 @@ const async = require('async'),
 
 module.exports = function (exit) {
   // banner line
-  console.info('Linting files using eslint...');
+  console.info(chalk.bold.yellow('Linting files using eslint...'));
 
   async.waterfall([
 
@@ -45,7 +46,7 @@ module.exports = function (exit) {
       console.info(ESLintCLIEngine.getFormatter()(report.results));
 
       // log the success of the parser if it has no errors
-      (errorReport && !errorReport.length) && console.info('eslint ok!');
+      (errorReport && !errorReport.length) && console.info(chalk.green('eslint ok!'));
 
       // ensure that the exit code is non zero in case there was an error
       next(Number(errorReport && errorReport.length) || 0);

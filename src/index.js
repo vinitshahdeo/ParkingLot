@@ -2,6 +2,7 @@
  * @description requiring native Node modules
  */
 const fs = require('fs'),
+    chalk = require('chalk'),
 	readLine = require('readline');
 
 var	commandLineInputs = process.argv; // processing command line inputs
@@ -23,6 +24,9 @@ if (commandLineInputs[commandLineInputs.length - 1] == 'true') {
 }
 else {
     fs.readFile(commandLineInputs[2], 'utf-8', function (err, data) {
+        if (err) {
+            console.log('Error in reading file');
+        }
         var arr = data.split('\n');
 		for (var i = 0; i < arr.length; i++) {
 			processUserCommands(arr[i]);
@@ -59,33 +63,33 @@ function processUserCommands (input) {
     switch (userCommand) {
         case 'create_parking_lot':
             totalParkingSlots = parkingLot.createParkingLot(input);
-            console.log('Created a parking lot with ' + totalParkingSlots + ' slots.');
+            console.log(chalk.yellow.bold('Created a parking lot with ' + totalParkingSlots + ' slots.'));
             break;
         case 'park':
             parkingSlotNumber = parkingLot.parkCar(input);
             if (parkingSlotNumber) {
-                console.log('Allocated slot number: ' + parkingSlotNumber);
+                console.log(chalk.green('Allocated slot number: ' + parkingSlotNumber));
 			}
 			else {
-                console.log('Sorry, parking lot is full');
+                console.log(chalk.red('Sorry, parking lot is full'));
             }
             break;
         case 'leave':
             parkingSlotNumber = parkingLot.leaveCar(input);
             if (parkingSlotNumber) {
-                console.log('Slot number ' + parkingSlotNumber + ' is free.');
+                console.log(chalk.blue('Slot number ' + parkingSlotNumber + ' is free.'));
 			}
 			else {
-                console.log('Sorry, parking lot is full');
+                console.log(chalk.red('Sorry, parking lot is full'));
             }
             break;
         case 'status':
             var parkingSlotStatus = parkingLot.getParkingStatus();
             if (parkingSlotStatus.length > 1) {
-                console.log(parkingSlotStatus.join('\n'));
+                console.log(chalk.bgMagenta(parkingSlotStatus.join('\n')));
             }
             else {
-                console.log('Sorry, parking lot is empty'); // what if it's empty
+                console.log(chalk.yellow('Sorry, parking lot is empty')); // what if it's empty
             }
             break;
         case 'registration_numbers_for_cars_with_colour':
@@ -94,7 +98,7 @@ function processUserCommands (input) {
                 console.log(registrationNumbers);
 			}
 			else {
-                console.log('Sorry, Car with given color is not found');
+                console.log(chalk.red('Sorry, Car with given color is not found'));
             }
             break;
         case 'slot_numbers_for_cars_with_colour':
@@ -103,7 +107,7 @@ function processUserCommands (input) {
                 console.log(parkingSlotNumbers);
             }
             else {
-                console.log('Sorry, Car with given color is not found');
+                console.log(chalk.red.bold('Sorry, Car with given color is not found'));
             }
             break;
         case 'slot_number_for_registration_number':
@@ -112,14 +116,14 @@ function processUserCommands (input) {
                 console.log(parkingSlotNumber);
 			}
 			else {
-                console.log('Sorry, Car with given registration number is not found');
+                console.log(chalk.red.bold('Sorry, Car with given registration number is not found'));
             }
             break;
         case 'exit':
 			process.exit(0);
 			break;
         default:
-            console.log(input, 'is not a recognized command');
+            console.log(chalk.red.bold(input, 'is not a recognized command'));
             break;
     }
     openInteractiveConsole();

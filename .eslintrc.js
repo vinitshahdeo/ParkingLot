@@ -252,7 +252,7 @@ module.exports = {
         "no-throw-literal": "off",
         "no-unneeded-ternary": "off",
         "no-unsafe-finally": "off",
-        "no-unused-vars": "warn",
+        "no-unused-vars": "off",
         "no-use-before-define": "off",
         "no-useless-computed-key": "off",
         "no-useless-escape": "off",

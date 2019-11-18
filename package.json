@@ -10,7 +10,8 @@
     "test": "node scripts/test.js",
     "test-unit": "mocha tests/specs.js",
     "test-lint": "node scripts/test-lint.js",
-    "test-system": "mocha scripts/test-system.js"
+    "test-system": "mocha scripts/test-system.js",
+    "build": "node scripts/build.js"
   },
   "keywords": [
     "parking",
@@ -27,6 +28,7 @@
     "chalk": "3.0.0",
     "eslint": "6.6.0",
     "parse-gitignore": "1.0.1",
+    "pkg": "4.4.0",
     "recursive-readdir-synchronous": "0.0.4",
     "shelljs": "0.8.3"
   }

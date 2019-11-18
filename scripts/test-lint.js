@@ -10,7 +10,8 @@ const async = require('async'),
    */
   LINT_SOURCE_DIRS = [
     './src/*.js',
-    './scripts/*.js'
+    './scripts/*.js',
+    'tests/*.js'
   ];
 
 module.exports = function (exit) {

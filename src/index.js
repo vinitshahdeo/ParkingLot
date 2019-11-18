@@ -101,7 +101,7 @@ function processUserCommands (input) {
             try {
                 var parkingSlotStatus = parkingLot.getParkingStatus();
                 if (parkingSlotStatus.length > 1) {
-                    console.log(chalk.bgMagenta(parkingSlotStatus.join('\n')));
+                    console.log(parkingSlotStatus.join('\n'));
                 }
                 else {
                     console.log(chalk.yellow('Sorry, parking lot is empty')); // what if it's empty

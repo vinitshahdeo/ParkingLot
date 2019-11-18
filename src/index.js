@@ -5,7 +5,8 @@ const fs = require('fs'),
     chalk = require('chalk'),
 	readLine = require('readline');
 
-var	commandLineInputs = process.argv; // processing command line inputs
+var	commandLineInputs = process.argv, // processing command line inputs
+    interactiveMode = false;
 
 /**
  * @description importing the parkingLot class
@@ -20,6 +21,7 @@ require('events').EventEmitter.defaultMaxListeners = 0;
 // TODO: Car with same numbers
 
 if (commandLineInputs[commandLineInputs.length - 1].endsWith('.txt')) {
+    interactiveMode = false;
     fs.readFile(commandLineInputs[2], 'utf-8', function (err, data) {
         if (err) {
             console.log('Error in reading file');
@@ -31,6 +33,7 @@ if (commandLineInputs[commandLineInputs.length - 1].endsWith('.txt')) {
     });
 }
 else {
+    interactiveMode = true;
     openInteractiveConsole();
 }
 
@@ -39,12 +42,19 @@ else {
  * it process one command at a time
  */
 function openInteractiveConsole () {
-    var prompts = readLine.createInterface({ input: process.stdin, output: process.stdout, terminal: false });
+
+    var prompts = readLine.createInterface({
+        input: process.stdin,
+        output: process.stdout,
+        terminal: false
+    });
 
     // option for user to enter commands
-    prompts.question('Input: ', function (data) {
-        processUserCommands(data);
-    });
+    if (interactiveMode) {
+        prompts.question('Input: ', function (data) {
+            processUserCommands(data);
+        });
+    }
 }
 
 /**
@@ -67,7 +77,7 @@ function processUserCommands (input) {
             catch (err) {
                 console.log(chalk.red.bold(err.message));
             }
-            
+
             break;
         case 'park':
             try {

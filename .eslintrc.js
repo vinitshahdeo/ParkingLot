@@ -9,7 +9,8 @@ module.exports = {
         "module": "readonly",
         "process": "readonly",
         "describe": "readonly",
-        "it": "readonly"
+        "it": "readonly",
+        "__dirname": "readonly"
     },
     "parserOptions": {
         "ecmaVersion": 2018,
@@ -19,7 +20,6 @@ module.exports = {
         "no-console": "off",
         "valid-typeof": "error",
         "require-jsdoc": "warn",
-
         "no-constant-condition": "error",
         "no-debugger": "error",
         "no-dupe-args": "error",

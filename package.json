@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test-unit": "mocha tests/specs.js",
-    "test-lint": "node scripts/test-lint.js"
+    "test-lint": "node scripts/test-lint.js",
+    "test-system": "mocha scripts/test-system.js"
   },
   "keywords": [
     "parking",
@@ -20,9 +21,11 @@
   "author": "Vinit Shahdeo <vinitshahdeo@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "async": "^3.1.0",
-    "chai": "^4.2.0",
-    "eslint": "^6.6.0",
-    "shelljs": "^0.8.3"
+    "async": "3.1.0",
+    "chai": "4.2.0",
+    "eslint": "6.6.0",
+    "parse-gitignore": "1.0.1",
+    "recursive-readdir-synchronous": "0.0.4",
+    "shelljs": "0.8.3"
   }
 }

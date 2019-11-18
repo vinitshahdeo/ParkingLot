@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "\"mocha tests/specs.js\"",
+    "test-unit": "mocha tests/specs.js",
     "test-lint": "node scripts/test-lint.js"
   },
   "keywords": [
@@ -21,6 +21,7 @@
   "license": "ISC",
   "devDependencies": {
     "async": "^3.1.0",
+    "chai": "^4.2.0",
     "eslint": "^6.6.0",
     "shelljs": "^0.8.3"
   }

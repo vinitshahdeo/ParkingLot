@@ -30,7 +30,8 @@ class ParkingLot {
 		  	}else{
 		  		return null;
 		  	}
-	  	}else{
+          }
+          else {
 	  		return null;
 	  	}
     }
@@ -73,7 +74,7 @@ class ParkingLot {
 	        	}
 	        }
     		return displayArr.join(", ");
-		} else{
+		} else {
 			return null;
 		}
     }

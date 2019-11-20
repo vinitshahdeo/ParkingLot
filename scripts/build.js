@@ -12,6 +12,7 @@ sh.exec('pkg ./src/index.js -t host --out-path bin', (code, stderr, stdout) => {
         return 0;
     }
     else {
+        // renaming it as per assignment instructions
         fs.rename('./bin/index', './bin/parking_lot', function (err) {
             if (err) {
                 console.log(chalk.red.bold('Error occured while renaming the executable'));

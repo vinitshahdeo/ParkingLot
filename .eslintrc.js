@@ -106,7 +106,7 @@ module.exports = {
           "allowArrayStart": true,
           "allowArrayEnd": false
         }],
-        "no-array-constructor": "error",
+        "no-array-constructor": "off",
         "max-nested-callbacks": "error",
         "new-parens": "error",
         "no-multiple-empty-lines": "error",

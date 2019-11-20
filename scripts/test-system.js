@@ -151,8 +151,8 @@ describe('Parking Lot repository', function () {
         expect(_.isEmpty(gitignore)).to.not.be.ok;
       });
 
-      it('must include extensions,dist,coverage,node_modules folders', function () {
-        expect(_.includes(gitignore, ['extensions/', 'dist/', 'coverage/', 'node_modules/']));
+      it('must include build ,dist, coverage, node_modules folders', function () {
+        expect(_.includes(gitignore, ['build/', 'dist/', 'out', 'coverage/', 'node_modules/']));
       });
     });
 

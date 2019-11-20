@@ -188,6 +188,8 @@ Repository must contain:
 
 [Vinit Shahdeo](https://github.com/vinitshahdeo)
 
+[![Twitter Badge](https://img.shields.io/twitter/follow/Vinit_Shahdeo.svg?style=social)](https://twitter.com/Vinit_Shahdeo)
+
 ```
   _____ _                 _     __   __          
  |_   _| |__   __ _ _ __ | | __ \ \ / /__  _   _ 

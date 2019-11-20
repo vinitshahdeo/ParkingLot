@@ -7,6 +7,7 @@
     "test": "tests"
   },
   "scripts": {
+    "start": "node src/index.js",
     "test": "node scripts/test.js",
     "test-unit": "mocha tests/specs.js",
     "test-lint": "node scripts/test-lint.js",

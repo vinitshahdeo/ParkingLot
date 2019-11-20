@@ -32,7 +32,9 @@ This is a console application written in `Node.js`. This can be run in two modes
 
 2. **File Mode**: It accepts a filename as a parameter at the command prompt and read the commands from that file.
 
-### Quick Start (for interactive mode)
+### Quick Start
+
+Navigate to `bin/` folder and open `parking_lot` with double click. It'll open a terminal where different [commands](#list-of-user-commands) can be typed in.
 
 #### For Interactive Mode
 

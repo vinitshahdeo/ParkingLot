@@ -16,3 +16,4 @@ test_logs/
 
 # Coverage
 .nyc_output/
+coverage/

@@ -1,0 +1,23 @@
+create_parking_lot 8
+park JH-01-HH-1234 Red
+park JH-01-HH-2999 White
+park JH-01-BB-0001 Black
+park JH-01-HH-7777 Red
+park JH-01-HH-2701 Blue
+park JH-01-HH-3141 Black
+leave_car_by_registration_number JH-01-BB-0001
+park KA-01-BB-0001 Black
+park KA-01-HH-7777 Red
+leave 3
+park KA-01-HH-2701 Blue
+status
+leave 2
+available_slot_numbers
+allocated_slot_numbers
+park KA-01-P-333 White
+park DL-12-AA-9999 White
+registration_numbers_for_cars_with_colour White
+slot_numbers_for_cars_with_colour White
+slot_number_for_registration_number JH-01-HH-1234
+slot_number_for_registration_number MH-04-AY-1111
+status

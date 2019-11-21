@@ -2,18 +2,24 @@ var Car = require('./car.js');
 
 /**
  * @description a base class for Parking lot
+ * @author Vinit Shahdeo <vinitshahdeo@gmail.com>
  */
 class ParkingLot {
-	// will initialize it later, first writing the business logic
+
 	constructor () {
         this.MAX_PARKING_SLOTS = 0; // maximum parking slots allowed
         this.parkingSlots = new Array(); // array for parking slots
     }
 
-    // TODO: What if input is not a number
+	/**
+	 *
+	 * @param {String} input user's input via terminal
+	 * @description creates a parking lot with given maximum slot numbers.
+	 * It throws an error if zero or negative input is provided
+	 */
 	createParkingLot (input) {
 		this.MAX_PARKING_SLOTS = parseInt(input.split(' ')[1]);
-		if (this.MAX_PARKING_SLOTS === 0) {
+		if (this.MAX_PARKING_SLOTS <= 0) {
 			// minimum: 1 slot
 			throw new Error('Minimum one slot is required to create parking slot');
 		}
@@ -21,16 +27,21 @@ class ParkingLot {
             this.parkingSlots.push(null);
         }
         return this.MAX_PARKING_SLOTS;
-    }
+	}
+
+	/**
+	 *
+	 * @param {String} input user's input via terminal
+	 * @description allocates nearest slot number to incoming cars.
+	 * It throws an error if parking lot is empty or full.
+	 */
     parkCar (input) {
         var len = this.parkingSlots.length;
     	if (this.MAX_PARKING_SLOTS > 0) {
 			var car, carNumber, carColor;
 	    	if (this.findNearestAvailableSlot(this.parkingSlots) == true) {
-                // use binary search here
 		  		for (var i = 0; i < len; i++) {
 		  			if (this.parkingSlots[i] == null) {
-						  // var inp = input.split(" ")[1] + ":" + input.split(" ")[2];
 						carNumber = input.split(' ')[1];
 						carColor = input.split(' ')[2];
 						car = new Car(carNumber, carColor);
@@ -39,7 +50,7 @@ class ParkingLot {
 						return i;
 		  			}
 		  		}
-			  } 
+			  }
 			else {
 		  		throw new Error('Sorry, parking lot is full');
 		  	}
@@ -47,7 +58,14 @@ class ParkingLot {
           else {
 	  		throw new Error('Minimum one slot is required to create parking slot');
 	  	}
-    }
+	}
+
+	/**
+	 *
+	 * @param {String} input user's input via terminal
+	 * @description makes slot free for given slot number.
+	 * It throws an error if parking lot is empty
+	 */
     leaveCar (input) {
     	if (this.MAX_PARKING_SLOTS > 0) {
 	    	var index = input.split(' ')[1] - 1;
@@ -60,7 +78,16 @@ class ParkingLot {
 		else {
 			throw new Error('Sorry, parking lot is empty');
 		}
-    }
+	}
+
+	// TODO
+	leaveCarByCarNumber (input) {
+
+	}
+
+	/**
+	 * @description Returns an array containg parking details i.e. slot no, registration number and color
+	 */
     getParkingStatus () {
     	var arr = new Array();
     	if (this.MAX_PARKING_SLOTS > 0) {
@@ -74,13 +101,19 @@ class ParkingLot {
         		}
         	}
         	return arr;
-		} 
+		}
 		else {
 			throw new Error('Sorry, parking lot is empty');
 		}
-    }
+	}
+	
+	/**
+	 * 
+	 * @param {String} input user's input via terminal
+	 * @description returns a comma separated string of regsitration numbers of car having same color.
+	 * It returns null if car is not found
+	 */
     getCarsWithSameColor (input) {
-		// TODO what if car of particular color is not present
     	if (this.MAX_PARKING_SLOTS > 0) {
 	        var displayArr = new Array();
 	        for (var i = 0; i < this.parkingSlots.length; i++) {
@@ -89,11 +122,18 @@ class ParkingLot {
 	        	}
 	        }
     		return displayArr.join(', ');
-		} 
+		}
 		else {
 			return null;
 		}
-    }
+	}
+	
+	/**
+	 * 
+	 * @param {String} input user's input via terminal
+	 * @description returns a comma separated string of slot numbers for cars of given color.
+	 * It returns null if cars of given color is not found.
+	 */
     getSlotsWithSameColorCar (input) {
     	if (this.MAX_PARKING_SLOTS > 0) {
 	    	var displayArr = new Array();
@@ -107,7 +147,14 @@ class ParkingLot {
         else {
 			return null;
 		}
-    }
+	}
+	
+	/**
+	 * 
+	 * @param {String} input user's input via terminal
+	 * @description returns slot number for given car number.
+	 * It returns null if car is not found.
+	 */
     getSlotByCarNumber (input) {
 		// TODO:  What parking lot is empty
 		if (this.MAX_PARKING_SLOTS > 0) {
@@ -123,7 +170,22 @@ class ParkingLot {
 			return null;
 		}
 	}
-	findNearestAvailableSlot (parkingSlots) {
+
+	// TODO
+	findAllAvailableSlots () {
+
+	}
+
+	// TODO
+	findAllAllocatedSlots () {
+
+	}
+
+	/**
+	 * @description returns the nearest available slot
+	 * used by parkCar() method to find nearest slot
+	 */
+	findNearestAvailableSlot () {
 		var ele = false;
 		for (var i = 0; i < this.parkingSlots.length; i++) {
 			if (this.parkingSlots[i] == null) {

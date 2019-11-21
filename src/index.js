@@ -140,7 +140,7 @@ function processUserCommands (input) {
 			process.exit(0);
 			break;
         default:
-            console.log(chalk.red.bold(input, 'is not a recognized command'));
+            console.log(chalk.red.bold(input, 'is an invalid command'));
             break;
     }
     openInteractiveConsole();

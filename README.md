@@ -34,7 +34,7 @@ This is a console application written in `Node.js`. This can be run in two modes
 
 ### Quick Start
 
-Navigate to `bin/` folder and open `parking_lot` with double click. It'll open a terminal where different [commands](#list-of-user-commands) can be typed in.
+**Proceed to the steps below only if you've `Node.js` installed.** If not, please refer [Pre requisites](#pre-requisites) section.
 
 #### For Interactive Mode
 
@@ -50,14 +50,24 @@ Open terminal and navigate (`cd`) to this folder and type the following commands
 Open terminal and type `node src/index.js data/input.txt`.
 
 ```
-node src/index.js path_to_file.txt
+node src/index.js <path_to_file.txt>
 ```
+
+**Note**: You can find a few sample input files inside `data/` folder.
 
 #### Explained
 
 **STEP 1**: `npm install` or `npm i` will download all the dependencies defined in `package.json` file and generates a `node_modules/` folder with the installed modules. Learn more [here](https://docs.npmjs.com/cli/install).
 
 **STEP 2**: `npm start` or `npm run start` will start the application. It is equivalent to `node src/index.js`
+
+#### Console Application
+
+Navigate to `bin/` folder and open `parking_lot` with double click. It'll open a terminal where different [commands](#list-of-user-commands) can be typed in. 
+You may face permission related issues, please allow opening applications from unauthorized developers as it's blocked due to security reasons. 
+If you're using macOS catalina, you'll be prompted security warning as this binary is not notarzied. Learn more about Notarization [here](https://developer.apple.com/documentation/xcode/notarizing_macos_software_before_distribution).
+
+If you're still facing issues, please build the console application locally. Kindly refer [Build Script](#build-script) section to build locally.
 
 ## List of User Commands
 
@@ -110,7 +120,11 @@ There are two classes defined:
 
     - `Sorry, parking lot is full` : When parking lot has reached its maximum capacity.
 
-- `leaveCar(input)` : Removes car in given slot in parking lot. It throws an error `Sorry, parking lot is empty` if parking lot is empty.
+- `leaveCar(input)` : Removes car in given slot in parking lot. It throws following errors:
+
+  - `Sorry, parking lot is empty` if parking lot is empty.
+
+  - `Slot number is not found` when slot number is absent.
 
 - `leaveCarByCarNumber (input)` : Makes the slot free for car of given registration number.
 
@@ -206,7 +220,8 @@ Go to `coverage/` folder and open `index.html`.
 
 ## Build Script
 
-`npm run build` will build the executable(console application) inside `bin/` folder which can be opened by double clicking on it.
+`npm run build` will build the executable(console application) inside `bin/` folder which can be opened by double clicking on it. 
+Make sure you've already done with `npm install`, if not please install dependencies first. Please refer [this](#explained) section for the same.
 
 > Note: [pkg](https://www.npmjs.com/package/pkg) is used to package the Node.js application into an executable. Learn more [here](https://www.npmjs.com/package/pkg).
 
@@ -247,7 +262,7 @@ Over and above, I possess accountable knowledge of **OOPs** concepts. Entered th
 
 > [My Internship experience at Postman](https://medium.com/@vinitshahdeo/software-engineering-internship-experience-at-postman-182df16ef33f)
 
-Currently I am working as a **Software Engineer** at [Postman](). I work with all kinds of modern JavaScript (React, NodeJS etc). 
+Currently I am working as a **Software Engineer** at [Postman](). I work with all kinds of modern JavaScript (React, Node.js etc). 
 
 My charitable motivation, coupled with a passion for what I am doing, inspires me for open source. I am addicted to green dots on GitHub. **Here's the [link](https://github.com/vinitshahdeo) to my GitHub profile.** I contribute to the following orgs:
 

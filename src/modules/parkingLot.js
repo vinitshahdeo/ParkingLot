@@ -34,6 +34,7 @@ class ParkingLot {
 	 * @param {String} input user's input via terminal
 	 * @description allocates nearest slot number to incoming cars.
 	 * It throws an error if parking lot is empty or full.
+	 * It also throws an error if only one field (either registration number or color) is provided.
 	 */
     parkCar (input) {
         var len = this.parkingSlots.length;
@@ -44,10 +45,15 @@ class ParkingLot {
 		  			if (this.parkingSlots[i] == null) {
 						carNumber = input.split(' ')[1];
 						carColor = input.split(' ')[2];
-						car = new Car(carNumber, carColor);
-						this.parkingSlots[i] = car;
-						i = i + 1;
-						return i;
+						if (carNumber && carColor) {
+							car = new Car(carNumber, carColor);
+							this.parkingSlots[i] = car;
+							i = i + 1;
+							return i;
+						}
+						else {
+							throw new Error('Please provide registration number and color both');
+						}
 		  			}
 		  		}
 			  }

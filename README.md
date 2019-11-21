@@ -120,6 +120,8 @@ There are two classes defined:
 
     - `Sorry, parking lot is full` : When parking lot has reached its maximum capacity.
 
+    - `Please provide registration number and color both` : When input contains either of two i.e. registration number and color of the car.
+
 - `leaveCar(input)` : Removes car in given slot in parking lot. It throws following errors:
 
   - `Sorry, parking lot is empty` if parking lot is empty.

@@ -1,0 +1,27 @@
+create_parking_lot 8
+park PB-01-KL-1234 Red
+park PB-01-KL-2999 White
+park PB-01-BB-0001 Black
+status
+leave 3
+park DL-01-KL-7777 Red
+park DL-01-KL-2701 Blue
+park DL-01-KL-3141 Black
+leave_car_by_registration_number JH-01-BB-0001
+leave_car_by_registration_number PB-01-KL-1234
+park KA-01-BB-0001 Black
+park KA-01-HH-7777 Red
+leave 3
+park KA-01-HH-2701 Blue
+status
+leave 2
+leave 7
+available_slot_numbers
+allocated_slot_numbers
+leave 3
+registration_numbers_for_cars_with_colour White
+slot_numbers_for_cars_with_colour White
+slot_number_for_registration_number JH-01-HH-1234
+park HR-03-CJ-6453 blue
+park KP-02-DP-1234 white
+status

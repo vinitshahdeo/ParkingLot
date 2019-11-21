@@ -175,6 +175,15 @@ Repository must contain:
 
 > Note: [pkg](https://www.npmjs.com/package/pkg) is used to package the Node.js application into an executable. Learn more [here](https://www.npmjs.com/package/pkg).
 
+## Documentation
+
+> Writing code is easy but maintaining isn’t? One can read one's code but it's difficult for others to read. 
+With this spirit, I've added JSDoc comments in code.
+
+Go to `out/` folder and open `global.html`. You'll find the documentation for the source code there.
+
+To generates the docs locally, open terminal and run `npm run create-docs`.
+
 ## Dependencies Used
 
 - [Mocha](https://mochajs.org/): A JavaScript test framework for Node.js programs. Learn more [here](https://mochajs.org/).
@@ -188,6 +197,8 @@ Repository must contain:
 - [ESLint](https://eslint.org/): A static code analysis tool for identifying problematic patterns found in JavaScript code. It covers both code quality and coding style issues. Learn more [here](https://eslint.org/).
 
 - [pkg](https://www.npmjs.com/package/pkg): It is used to package a Node.js project into an executable that can be run even on devices without Node.js installed. Learn more [here](https://www.npmjs.com/package/pkg).
+
+- [JSDoc](https://www.npmjs.com/package/jsdoc): An open source API documentation generator for Javascript. It allows developers to document their code through comments. It is supported only for Node.js versions > `v8.15.0`. Learn more [here](https://devdocs.io/jsdoc/).
 
 ## Author
 

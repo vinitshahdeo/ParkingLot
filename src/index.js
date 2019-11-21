@@ -15,9 +15,6 @@ var Parking = require('./modules/parkingLot.js'),
 // to avoid memory leaks errors, deafult max listeners = 10
 require('events').EventEmitter.defaultMaxListeners = 0;
 
-// TODO: What if parking lot is not created
-// TODO: Car with same numbers
-
 if (commandLineInputs[commandLineInputs.length - 1].endsWith('.txt')) {
     interactiveMode = false;
     fs.readFile(commandLineInputs[2], 'utf-8', function (err, data) {

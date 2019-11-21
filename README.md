@@ -188,7 +188,25 @@ Repository must contain:
 
 ## Author
 
-[Vinit Shahdeo](https://github.com/vinitshahdeo)
+#### [Vinit Shahdeo](https://github.com/vinitshahdeo)
+
+**Brief Introduction**
+
+Technology never scares, it always attracts! Passionate about simplifying things through technology.
+Proficient in **Data Structures** and **Algorithms** and love to solve problems that involve creativity and innovation. Entered this world as a fresher, made significant progress in self-learning new technologies at a faster pace of time and implementing them in the projects. 
+
+> [My Internship experience at Postman](https://medium.com/@vinitshahdeo/software-engineering-internship-experience-at-postman-182df16ef33f)
+
+Currently I am working as a **Software Engineer** at [Postman](). I work with all kinds of modern JavaScript (React, NodeJS etc). Over and above, I possess accountable knowledge of **OOPs** concepts.
+
+My charitable motivation, coupled with a passion for what I am doing, inspires me for open source. I am addicted to green dots on GitHub. **Here's the [link](https://github.com/vinitshahdeo) to my GitHub profile.** I contribute to the following orgs:
+
+- [Codeuino](https://github.com/codeuino/)
+- [CodeChef VIT](https://github.com/codechefvit)
+- [Systers](https://github.com/systers)
+- [VinnovateIT](https://github.com/vinnovateit)
+
+I'm super excited to explore opportunities with **Gojek**. Find me on [LinkedIn](https://www.linkedin.com/in/vinitshahdeo/).
 
 [![Twitter Badge](https://img.shields.io/twitter/follow/Vinit_Shahdeo.svg?style=social)](https://twitter.com/Vinit_Shahdeo)
 

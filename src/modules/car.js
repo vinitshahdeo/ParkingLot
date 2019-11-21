@@ -5,7 +5,7 @@
  */
 class Car {
     constructor (NUMBER, COLOR) {
-        this.NUMBER = NUMBER;
+        this.NUMBER = NUMBER; // unique propery of an instance of car class
         this.COLOR = COLOR;
     }
 

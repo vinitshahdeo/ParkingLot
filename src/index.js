@@ -136,6 +136,42 @@ function processUserCommands (input) {
                 console.log(chalk.red.bold('Sorry, Car with given registration number is not found'));
             }
             break;
+        case 'leave_car_by_registration_number':
+            try {
+                parkingSlotNumber = parkingLot.leaveCarByCarNumber(input);
+                console.log(chalk.blue('Slot number ' + parkingSlotNumber + ' is free.'));
+            }
+            catch (err) {
+                console.log(chalk.red('Sorry, car with given registration is not found'));
+            }
+            break;
+        case 'slot_number_for_registration_number':
+            parkingSlotNumber = parkingLot.getSlotByCarNumber(input);
+            if (parkingSlotNumber) {
+                console.log(parkingSlotNumber);
+			}
+			else {
+                console.log(chalk.red.bold('Sorry, Car with given registration number is not found'));
+            }
+            break;
+        case 'available_slot_numbers':
+            availableSlotNumbers = parkingLot.findAllAvailableSlots(input);
+            if (availableSlotNumbers) {
+                console.log(availableSlotNumbers);
+			}
+			else {
+                console.log(chalk.red.bold('Sorry, Parking Lot is not created'));
+            }
+            break;
+        case 'allocated_slot_numbers':
+            allocatedSlotNumbers = parkingLot.findAllAllocatedSlots(input);
+            if (allocatedSlotNumbers) {
+                console.log(allocatedSlotNumbers);
+			}
+			else {
+                console.log(chalk.red.bold('Sorry, Parking Lot is not created'));
+            }
+            break;
         case 'exit':
 			process.exit(0);
 			break;

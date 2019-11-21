@@ -273,7 +273,7 @@ My charitable motivation, coupled with a passion for what I am doing, inspires m
 
 I'm super excited to explore opportunities with **Gojek**. Find me on [LinkedIn](https://www.linkedin.com/in/vinitshahdeo/).
 
-[![Twitter Badge](https://img.shields.io/twitter/follow/Vinit_Shahdeo.svg?style=social)](https://twitter.com/Vinit_Shahdeo)
+---
 
 ```
  _____ _                 _     __   __                    
@@ -310,3 +310,8 @@ ______           _   _     _
       |_|   |_|                                     |___/ 
 
 ```
+
+---
+
+[![Twitter Badge](https://img.shields.io/twitter/follow/Vinit_Shahdeo.svg?style=social)](https://twitter.com/Vinit_Shahdeo) 
+[![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow%20@vinitshahdeo&style=social)](https://github.com/vinitshahdeo/)

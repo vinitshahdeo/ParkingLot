@@ -1,6 +1,4 @@
-/**
- * @description requiring native Node modules
- */
+#!/usr/bin/env node
 const fs = require('fs'),
     chalk = require('chalk'),
 	readLine = require('readline');

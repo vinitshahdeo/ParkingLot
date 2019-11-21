@@ -86,6 +86,12 @@ Slot No.  Registration No Color
 
 - **slot_number_for_registration_number < REGISTRATION NUMBER >**: `slot_number_for_registration_number MH-04-AY-1111` will display the slot number for the car with registraion number MH-04-AY-1111.
 
+- **leave_car_by_registration_number**: `leave_car_by_registration_number JH-01-LT-0008` will free the slot occupied by car with registration number JH-01-LT-0008.
+
+- **available_slot_numbers**: `available_slot_numbers` will display available slot numbers e.g. 2, 6, 8.
+
+- **allocated_slot_numbers**: `allocated_slot_numbers` will display occupied slot numbers e.g. 1, 3, 4, 5, 7;
+
 - **exit**: `exit` will quit the application and return to the console.
 
 > **NOTE: Any commands which are not mentioned above will throw an error: `xyz is not a recognized command`**
@@ -106,6 +112,8 @@ There are two classes defined:
 
 - `leaveCar(input)` : Removes car in given slot in parking lot. It throws an error `Sorry, parking lot is empty` if parking lot is empty.
 
+- `leaveCarByCarNumber (input)` : Makes the slot free for car of given registration number.
+
 - `getParkingStatus()` : Returns an array containing slot number, registration number and color. It throws an error `Sorry, parking lot is empty` if parking lot is empty.
 
 - `getCarsWithSameColor(input)` : Returns a comma separated string containing registration numbers of cars with same color e.g. `KA-01-HH-1234, KA-01-HH-9999, KA-01-P-333`.
@@ -114,7 +122,11 @@ There are two classes defined:
 
 - `getSlotByCarNumber(input)` : Finds slot number of car for given registration number. It returns `Not found` when car is not present.
 
-- `findNearestAvailableSlot ()` : Finds nearest free slot.
+- `findNearestAvailableSlot()` : Finds nearest free slot.
+
+- `findAllAvailableSlots()` : returns a comma separated string of free parking slots e.g. 1, 4, 7. It returns `null` if parking lot is not created.
+
+- `findAllAllocatedSlots()` : returns a comma separated string of allocated parking slots e.g. 2, 3, 5, 6. It returns `null` if parking lot is not created.
 
 `Car()`
 

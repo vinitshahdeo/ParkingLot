@@ -131,13 +131,13 @@ class ParkingLot {
 	 */
     getCarsWithSameColor (input) {
     	if (this.MAX_PARKING_SLOTS > 0) {
-	        var displayArr = new Array();
+	        var sameColoredCarsArray = new Array();
 	        for (var i = 0; i < this.parkingSlots.length; i++) {
 	        	if (this.parkingSlots[i] && this.parkingSlots[i].COLOR.toLowerCase() == input.split(' ')[1].toLowerCase()) {
-	        		displayArr.push(this.parkingSlots[i].NUMBER);
+	        		sameColoredCarsArray.push(this.parkingSlots[i].NUMBER);
 	        	}
 	        }
-    		return displayArr.join(', ');
+    		return sameColoredCarsArray.join(', ');
 		}
 		else {
 			return null;
@@ -152,13 +152,13 @@ class ParkingLot {
 	 */
     getSlotsWithSameColorCar (input) {
     	if (this.MAX_PARKING_SLOTS > 0) {
-	    	var displayArr = new Array();
+	    	var slotsWithSameColorCarArray = new Array();
 	        for (var i = 0; i < this.parkingSlots.length; i++) {
 	        	if (this.parkingSlots[i] && this.parkingSlots[i].COLOR.toLowerCase() == input.split(' ')[1].toLowerCase()) {
-	        		displayArr.push(i + 1);
+	        		slotsWithSameColorCarArray.push(i + 1);
 	        	}
 	        }
-        	return displayArr.join(', ');
+        	return slotsWithSameColorCarArray.join(', ');
         }
         else {
 			return null;

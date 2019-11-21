@@ -64,11 +64,15 @@ class ParkingLot {
 	 *
 	 * @param {String} input user's input via terminal
 	 * @description makes slot free for given slot number.
-	 * It throws an error if parking lot is empty
+	 * It throws an error if parking lot is empty or
+	 * slot number is not found
 	 */
     leaveCar (input) {
     	if (this.MAX_PARKING_SLOTS > 0) {
-	    	var index = input.split(' ')[1] - 1;
+			var index = parseInt(input.split(' ')[1] - 1);
+			if (index >= this.MAX_PARKING_SLOTS) {
+				throw new Error(`Slot number ${index + 1} is not found`);
+			}
 		    if (index > -1 && index <= this.parkingSlots.length) {
 			    this.parkingSlots[index] = null;
 			    index = index + 1;

@@ -92,7 +92,7 @@ function processUserCommands (input) {
                 console.log(chalk.blue('Slot number ' + parkingSlotNumber + ' is free.'));
             }
             catch (err) {
-                console.log(chalk.red('Sorry, parking lot is empty'));
+                console.log(chalk.red(err.message)); // handling exceptions
             }
             break;
         case 'status':

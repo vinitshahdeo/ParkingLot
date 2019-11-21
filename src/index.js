@@ -146,7 +146,7 @@ function processUserCommands (input) {
             }
             break;
         case 'available_slot_numbers':
-            availableSlotNumbers = parkingLot.findAllAvailableSlots(input);
+            var availableSlotNumbers = parkingLot.findAllAvailableSlots(input);
             if (availableSlotNumbers) {
                 console.log(availableSlotNumbers);
 			}
@@ -155,7 +155,7 @@ function processUserCommands (input) {
             }
             break;
         case 'allocated_slot_numbers':
-            allocatedSlotNumbers = parkingLot.findAllAllocatedSlots(input);
+            var allocatedSlotNumbers = parkingLot.findAllAllocatedSlots(input);
             if (allocatedSlotNumbers) {
                 console.log(allocatedSlotNumbers);
 			}

@@ -80,9 +80,25 @@ class ParkingLot {
 		}
 	}
 
-	// TODO
+	/**
+	 * 
+	 * @param {String} input user's input via terminal
+	 * @description it makes the slot free for the car of given registration number.
+	 * It throws an error if car is not found.
+	 */
 	leaveCarByCarNumber (input) {
-
+		if (this.MAX_PARKING_SLOTS > 0) {
+			var carNumber = input.split(' ')[1];
+		    for (var index = 0; index < this.MAX_PARKING_SLOTS; index++) {
+				if (this.parkingSlots[index].NUMBER === carNumber) {
+					this.parkingSlots[index] = null;
+					return index + 1;
+				}
+			}
+		}
+		else {
+			throw new Error('Sorry, car with given registration is not found');
+		}
 	}
 
 	/**

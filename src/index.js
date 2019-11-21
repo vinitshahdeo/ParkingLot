@@ -24,7 +24,10 @@ if (commandLineInputs[commandLineInputs.length - 1].endsWith('.txt')) {
         var arr = data.split('\n');
 		for (var i = 0; i < arr.length; i++) {
 			processUserCommands(arr[i]);
-		}
+        }
+
+        // returning to console once all the inputs are processed
+        process.exit(1);
     });
 }
 else {

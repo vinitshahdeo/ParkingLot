@@ -4,7 +4,7 @@ const sh = require('shelljs'),
   pkg = require('../package.json'),
   host = require('./utils/findHost')();
 
-console.log(chalk.yellow.bold('Packaging the Parking Lot Console Application for host platform'));
+console.log(chalk.yellow.bold('Packaging the Parking Lot Console Application for host platform...\n'));
 
 sh.exec('pkg ./src/index.js -t host --out-path bin', (code, stderr, stdout) => {
     if (code !== 0 && stderr) {
@@ -18,7 +18,7 @@ sh.exec('pkg ./src/index.js -t host --out-path bin', (code, stderr, stdout) => {
                 console.log(chalk.red.bold('Error occured while renaming the executable'));
             }
             else {
-                console.log(chalk.green.bold('Parking Lot (version : ' + pkg.version + ') is created successfully for ' + host + ' in "bin/" folder'));
+                console.log(chalk.green.bold('Parking Lot (version : ' + pkg.version + ') is created successfully for ' + host + ' in "bin/" folder\n'));
             }
         });
     }

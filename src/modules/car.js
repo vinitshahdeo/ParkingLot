@@ -1,5 +1,7 @@
 /**
  * @description a basic object with two fields: Number and Color
+ * @assumption the registration number for two cars can never be same
+ * @author Vinit Shahdeo <vinitshahdeo@gmail.com>
  */
 class Car {
     constructor (NUMBER, COLOR) {

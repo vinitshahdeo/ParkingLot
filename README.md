@@ -122,6 +122,8 @@ There are two classes defined:
 
 - `isCarEqual()` : Checks whether two cars are equal or not. 
 
+**Note:** I've made an assumption that the registration number for two cars can never be same.
+
 ## Test Scripts
 
 Tests are written using [Mocha](https://mochajs.org/) and can be run using `npm test`

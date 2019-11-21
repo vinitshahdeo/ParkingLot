@@ -187,14 +187,42 @@ class ParkingLot {
 		}
 	}
 
-	// TODO
+	/**
+	 * @description returns a comma separated string of free parking slots.
+	 * It returns `null` if parking lot is not created
+	 */
 	findAllAvailableSlots () {
-
+		if (this.MAX_PARKING_SLOTS > 0) {
+	    	var availableSlots = new Array();
+	        for (var i = 0; i < this.parkingSlots.length; i++) {
+	        	if (!(this.parkingSlots[i] && this.parkingSlots[i].COLOR && this.parkingSlots[i].NUMBER)) {
+	        		availableSlots.push(i + 1);
+	        	}
+	        }
+        	return availableSlots.join(', ');
+        }
+        else {
+			return null;
+		}
 	}
 
-	// TODO
+	/**
+	 * @description returns a comma separated string of allocated parking slots.
+	 * It returns `null` if parking lot is not created.
+	 */
 	findAllAllocatedSlots () {
-
+		if (this.MAX_PARKING_SLOTS > 0) {
+	    	var allocatedSlots = new Array();
+	        for (var i = 0; i < this.parkingSlots.length; i++) {
+	        	if (this.parkingSlots[i] && this.parkingSlots[i].COLOR && this.parkingSlots[i].NUMBER) {
+	        		allocatedSlots.push(i + 1);
+	        	}
+	        }
+        	return allocatedSlots.join(', ');
+        }
+        else {
+			return null;
+		}
 	}
 
 	/**

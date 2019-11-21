@@ -145,15 +145,6 @@ function processUserCommands (input) {
                 console.log(chalk.red('Sorry, car with given registration is not found'));
             }
             break;
-        case 'slot_number_for_registration_number':
-            parkingSlotNumber = parkingLot.getSlotByCarNumber(input);
-            if (parkingSlotNumber) {
-                console.log(parkingSlotNumber);
-			}
-			else {
-                console.log(chalk.red.bold('Sorry, Car with given registration number is not found'));
-            }
-            break;
         case 'available_slot_numbers':
             availableSlotNumbers = parkingLot.findAllAvailableSlots(input);
             if (availableSlotNumbers) {

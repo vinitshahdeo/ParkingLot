@@ -169,7 +169,28 @@ Repository must contain:
 
 `node_modules/eslint/bin/eslint.js --fix src/` can be run to fix lint errors.
 
-**NOTE:** Code coverage is added to the mocha tests (`npm run test`) using **[nyc](https://www.npmjs.com/package/nyc)**. You can see the code-coverage report in terminal as well as detailed HTML report inside `coverage/` folder. Go to `coverage/` folder and open `index.html`.
+#### Code Coverage
+
+To see code coverage report, run `npm run test`.
+
+The current code coverage for the tests are following:
+
+| Type  | Percentage  |
+|---|---|
+| Statement  | 91.48  |
+| Branch  | 69.57  |
+| Function  | 89.53  |
+| Lines  | 91.25  |
+
+- **Function coverage:** Has each function (or subroutine) in the program been called?
+- **Statement coverage:** Has each statement in the program been executed?
+- **Branch coverage:** Has each branch (also called DD-path) of each control structure (such as in if and case statements) been executed? 
+- **Line coverage:** Has each executable line in the source file been executed?
+
+
+**NOTE:** Code coverage is added to the mocha tests (`npm run test`) using **[nyc](https://www.npmjs.com/package/nyc)**. 
+You can see the code-coverage report in terminal as well as detailed HTML report inside `coverage/` folder. 
+Go to `coverage/` folder and open `index.html`.
 
 ## Build Script
 

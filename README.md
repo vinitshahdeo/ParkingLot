@@ -122,18 +122,6 @@ There are two classes defined:
 
 - `isCarEqual()` : Checks whether two cars are equal or not. 
 
-## Dependencies Used
-
-- [Mocha](https://mochajs.org/): A JavaScript test framework for Node.js programs. Learn more [here](https://mochajs.org/).
-
-- [Chai](https://www.chaijs.com/): A BDD/TDD assertion library for Node.js and it can be paired with any JS testing framework. Learn more [here](https://www.chaijs.com/).
-
-- [Chalk](https://www.npmjs.com/package/chalk): A npm module used to style terminal string. Learn more [here](https://www.npmjs.com/package/chalk).
-
-- [ESLint](https://eslint.org/): A static code analysis tool for identifying problematic patterns found in JavaScript code. It covers both code quality and coding style issues. Learn more [here](https://eslint.org/).
-
-- [pkg](): It is used to package a Node.js project into an executable that can be run even on devices without Node.js installed. Learn more [here](https://www.npmjs.com/package/pkg).
-
 ## Test Scripts
 
 Tests are written using [Mocha](https://mochajs.org/) and can be run using `npm test`
@@ -179,12 +167,27 @@ Repository must contain:
 
 `node_modules/eslint/bin/eslint.js --fix src/` can be run to fix lint errors.
 
+**NOTE:** Code coverage is added to the mocha tests (`npm run test`) using **[nyc](https://www.npmjs.com/package/nyc)**. You can see the code-coverage report in terminal as well as detailed HTML report inside `coverage/` folder. Go to `coverage/` folder and open `index.html`.
+
 ## Build Script
 
 `npm run build` will build the executable(console application) inside `bin/` folder which can be opened by double clicking on it.
 
 > Note: [pkg](https://www.npmjs.com/package/pkg) is used to package the Node.js application into an executable. Learn more [here](https://www.npmjs.com/package/pkg).
 
+## Dependencies Used
+
+- [Mocha](https://mochajs.org/): A JavaScript test framework for Node.js programs. Learn more [here](https://mochajs.org/).
+
+- [Chai](https://www.chaijs.com/): A BDD/TDD assertion library for Node.js and it can be paired with any JS testing framework. Learn more [here](https://www.chaijs.com/).
+
+- [nyc](https://www.npmjs.com/package/nyc): A JS code coverage tool extensively tested with Mocha for measuring code coverage. Learn more [here](https://istanbul.js.org/docs/tutorials/mocha/).
+
+- [Chalk](https://www.npmjs.com/package/chalk): A npm module used to style terminal string. Learn more [here](https://www.npmjs.com/package/chalk).
+
+- [ESLint](https://eslint.org/): A static code analysis tool for identifying problematic patterns found in JavaScript code. It covers both code quality and coding style issues. Learn more [here](https://eslint.org/).
+
+- [pkg](https://www.npmjs.com/package/pkg): It is used to package a Node.js project into an executable that can be run even on devices without Node.js installed. Learn more [here](https://www.npmjs.com/package/pkg).
 
 ## Author
 

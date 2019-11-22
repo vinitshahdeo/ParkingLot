@@ -100,7 +100,7 @@ describe('Testing Functions in ParkingLot class', function () {
       done();
   });
 
-  it('Registeration no. for cars with white color', function (done) {
+  it('Registration no. for cars with white color', function (done) {
       var ele = parkingLot.getCarsWithSameColor(commands[11]);
       ele = ele.split(', ');
       assert.equal(ele[0], 'KA-01-HH-1234');

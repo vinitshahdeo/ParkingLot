@@ -16,7 +16,7 @@ console.log(chalk.yellow.bold('Creating documentation using JSDoc...\n'));
 
 sh.exec(command, (code, stderr, stdout) => {
     if (code !== 0 && stderr) {
-        console.log(chalk.red.bold('Error occured while packaging Parking Lot\n'));
+        console.log(chalk.red.bold('Error occurred while packaging Parking Lot\n'));
         return 0;
     }
     else {

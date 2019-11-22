@@ -12,7 +12,7 @@ var	commandLineInputs = process.argv, // processing command line inputs
 var Parking = require('./modules/parkingLot.js'),
 	parkingLot = new Parking();
 
-// to avoid memory leaks errors, deafult max listeners = 10
+// to avoid memory leaks errors, default max listeners = 10
 require('events').EventEmitter.defaultMaxListeners = 0;
 
 if (commandLineInputs[commandLineInputs.length - 1].endsWith('.txt')) {

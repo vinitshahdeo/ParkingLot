@@ -112,7 +112,7 @@ class ParkingLot {
 	}
 
 	/**
-	 * @description Returns an array containg parking details i.e. slot no, registration number and color
+	 * @description Returns an array containing parking details i.e. slot no, registration number and color
 	 */
     getParkingStatus () {
     	var arr = new Array();
@@ -136,7 +136,7 @@ class ParkingLot {
 	/**
 	 * 
 	 * @param {String} input user's input via terminal
-	 * @description returns a comma separated string of regsitration numbers of car having same color.
+	 * @description returns a comma separated string of registration numbers of car having same color.
 	 * It returns null if car is not found
 	 */
     getCarsWithSameColor (input) {

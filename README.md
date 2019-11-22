@@ -106,6 +106,8 @@ Slot No.  Registration No Color
 
 > **NOTE: Any commands which are not mentioned above will throw an error: `xyz is an an invalid command`**
 
+**To view all the commands in terminal, please run `npm run help`**
+
 ## Modules - OOPS Approach
 
 There are two classes defined:
@@ -234,7 +236,7 @@ With this spirit, I've added [JSDoc](https://www.npmjs.com/package/jsdoc) commen
 
 Go to `out/` folder and open `global.html`. You'll find the documentation for the source code there.
 
-To generates the docs locally, open terminal and run `npm run create-docs`.
+**To generates the docs locally**, open terminal and run `npm run create-docs`.
 
 ## Dependencies Used
 

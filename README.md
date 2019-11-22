@@ -254,6 +254,34 @@ Go to `out/` folder and open `global.html`. You'll find the documentation for th
 
 - [JSDoc](https://www.npmjs.com/package/jsdoc): An open source API documentation generator for Javascript. It allows developers to document their code through comments. It is supported only for Node.js versions > `v8.15.0`. Learn more [here](https://devdocs.io/jsdoc/).
 
+## TL; DR
+
+Here's the **cheat sheet** for you!
+
+Open terminal and type the following:
+
+1. `cd parking_lot` : Navigates to the `parking_lot` root folder.
+
+2. `npm install` : Installs all the dependencies.
+
+3. `npm run start` : Starts the console application in interactive mode.
+
+4. `npm run test` : Runs all the tests.
+
+5. `npm run test-unit` : Runs all the unit tests.
+
+6. `npm run test-system` : Runs system tests.
+
+7. `npm run test-lint` : Runs lint test.
+
+8. `npm run build` : Builds the application in `bin/` directory.
+
+9. `npm run create-docs` : Creates documentation inside `out/` folder.
+
+10. `npm run help` : Displays all supported user commands.
+
+11. `node src/index.js data/input.txt` : Runs the application in file mode.
+
 ## Author
 
 #### [Vinit Shahdeo](https://github.com/vinitshahdeo)

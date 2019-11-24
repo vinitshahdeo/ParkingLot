@@ -104,7 +104,7 @@ Slot No.  Registration No Color
 
 - **exit**: `exit` will quit the application and return to the console.
 
-> **NOTE: Any commands which are not mentioned above will throw an error: `xyz is an an invalid command`**
+> **NOTE: Any commands which are not mentioned above will throw an error: `<INPUT> is an invalid command`**
 
 **To view all the commands in terminal, please run `npm run help`**
 
@@ -128,7 +128,9 @@ There are two classes defined:
 
   - `Sorry, parking lot is empty` if parking lot is empty.
 
-  - `Slot number is not found` when slot number is absent.
+  - `Slot number <SLOT NUMBER> is not found` when slot number is absent.
+
+  - `Slot number <SLOT NUMBER> is already free` when slot number is not occupied.
 
 - `leaveCarByCarNumber (input)` : Makes the slot free for car of given registration number.
 
@@ -152,7 +154,7 @@ There are two classes defined:
 
 - `isCarEqual()` : Checks whether two cars are equal or not.
 
-**Note:** I've made an assumption that the registration number for two cars can never be same.
+**Note:** *I've made an assumption that the registration number for two cars can never be same.*
 
 ## Test Scripts
 
@@ -253,6 +255,11 @@ Go to `out/` folder and open `global.html`. You'll find the documentation for th
 - [pkg](https://www.npmjs.com/package/pkg): It is used to package a Node.js project into an executable that can be run even on devices without Node.js installed. Learn more [here](https://www.npmjs.com/package/pkg).
 
 - [JSDoc](https://www.npmjs.com/package/jsdoc): An open source API documentation generator for Javascript. It allows developers to document their code through comments. It is supported only for Node.js versions > `v8.15.0`. Learn more [here](https://devdocs.io/jsdoc/).
+
+## Screenshots
+
+Please go to `screenshots/` folder to find screenshots of running **Parking Lot** console application. 
+> **Click [here](https://drive.google.com/file/d/1-gbTo9aNZ8fYyd4bJLb0rSm7aQWUAEvk/view?usp=sharing) to view e2e working demo video.**
 
 ## TL; DR
 

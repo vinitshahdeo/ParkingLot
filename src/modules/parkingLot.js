@@ -79,7 +79,10 @@ class ParkingLot {
 			if (index >= this.MAX_PARKING_SLOTS) {
 				throw new Error(`Slot number ${index + 1} is not found`);
 			}
-		    if (index > -1 && index <= this.parkingSlots.length) {
+			else if (this.parkingSlots[index] === null) {
+				throw new Error(`Slot number ${index+1} is already free`);
+			}
+		    else if (index > -1 && index <= this.parkingSlots.length) {
 			    this.parkingSlots[index] = null;
 			    index = index + 1;
 			    return index;

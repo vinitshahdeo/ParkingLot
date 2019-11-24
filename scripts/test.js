@@ -1,4 +1,9 @@
-// combination of all tests
+/**
+ * 
+ * @description runs all the tests i.e. unit tests, lint tests and system tests.
+ * the test fails if any of the above test suites fail.
+ * 
+ */
 const sh = require('shelljs'),
     chalk = require('chalk'),
     async = require('async');

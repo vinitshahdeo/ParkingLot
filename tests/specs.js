@@ -6,6 +6,7 @@ var commands = [],
       totalParkings,
       parkingLot = new Parking();
 
+// test specs for unit testing the methods in Parking Lot class
 describe('Test for reading input test data', function () {
   it('reading input.txt', function (done) {
     fs.readFile('./data/input.txt', 'utf-8', function (err, data) {

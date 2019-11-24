@@ -1,4 +1,8 @@
-// Running unit tests for different functions
+/**
+ * 
+ * @description running unit tests for different functions in ParkingLot class.
+ * 
+ */
 const sh = require('shelljs');
 
 sh.exec('mocha tests/specs.js', (err, stdout, stderr) => {

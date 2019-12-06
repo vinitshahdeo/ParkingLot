@@ -80,7 +80,7 @@ class ParkingLot {
 				throw new Error(`Slot number ${index + 1} is not found`);
 			}
 			else if (this.parkingSlots[index] === null) {
-				throw new Error(`Slot number ${index+1} is already free`);
+				throw new Error(`Slot number ${index + 1} is already free`);
 			}
 		    else if (index > -1 && index <= this.parkingSlots.length) {
 			    this.parkingSlots[index] = null;
@@ -94,7 +94,7 @@ class ParkingLot {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param {String} input user's input via terminal
 	 * @description it makes the slot free for the car of given registration number.
 	 * It throws an error if car is not found.
@@ -135,9 +135,9 @@ class ParkingLot {
 			throw new Error('Sorry, parking lot is empty');
 		}
 	}
-	
+
 	/**
-	 * 
+	 *
 	 * @param {String} input user's input via terminal
 	 * @description returns a comma separated string of registration numbers of car having same color.
 	 * It returns null if car is not found
@@ -156,9 +156,9 @@ class ParkingLot {
 			return null;
 		}
 	}
-	
+
 	/**
-	 * 
+	 *
 	 * @param {String} input user's input via terminal
 	 * @description returns a comma separated string of slot numbers for cars of given color.
 	 * It returns null if cars of given color is not found.
@@ -177,9 +177,9 @@ class ParkingLot {
 			return null;
 		}
 	}
-	
+
 	/**
-	 * 
+	 *
 	 * @param {String} input user's input via terminal
 	 * @description returns slot number for given car number.
 	 * It returns null if car is not found.

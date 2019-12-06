@@ -1,7 +1,7 @@
 /**
- * 
+ *
  * @description creates documentation for the code using JSDoc in out/ folder
- * 
+ *
  */
 
 const sh = require('shelljs'),

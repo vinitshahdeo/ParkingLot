@@ -1,7 +1,7 @@
 /**
- * 
+ *
  * @description running unit tests for different functions in ParkingLot class.
- * 
+ *
  */
 const sh = require('shelljs');
 

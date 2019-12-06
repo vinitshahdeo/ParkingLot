@@ -1,7 +1,7 @@
 const chalk = require('chalk'); // for styling terminal strings
 
 /**
- * 
+ *
  * @description list of all the user commands supported
  */
 const userCommands = [
@@ -51,14 +51,14 @@ const userCommands = [
     }
 ];
 
-console.log(chalk.bold.yellow('The following user commands are supported:\n'))
+console.log(chalk.bold.yellow('The following user commands are supported:\n'));
 
 // logging supported commands for help, triggered via `npm run help`
 for (var index = 0; index <= 10; index++) {
     (function (command) {
         // displaying commands in interval of 2 seconds for better readability
-        setTimeout(function() { 
+        setTimeout(function () {
             console.log(chalk.green.bold(command.type), ':', chalk.bold.bold(command.description), '\n');
-        }, index*2000);
+        }, index * 2000);
     })(userCommands[index]);
 }

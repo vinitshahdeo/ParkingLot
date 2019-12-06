@@ -3,7 +3,7 @@
  */
 module.exports = function () {
     var opsys = process.platform;
-  
+
     if (opsys === 'darwin') {
       opsys = 'MacOS';
     }
@@ -13,6 +13,6 @@ module.exports = function () {
     else if (opsys === 'linux') {
       opsys = 'Linux';
     }
-  
+
     return opsys;
 };

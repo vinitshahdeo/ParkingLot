@@ -301,5 +301,27 @@ Open terminal and type the following:
 
 #### [Vinit Shahdeo](https://github.com/vinitshahdeo)
 
+```js
+
+
+   ____ _           _   _           
+  / ___| | __ _  __| | | |_ ___     
+ | |  _| |/ _` |/ _` | | __/ _ \    
+ | |_| | | (_| | (_| | | || (_) |   
+  \____|_|\__,_|\__,_|  \__\___/    
+  ___  ___  ___   _   _  ___  _   _ 
+ / __|/ _ \/ _ \ | | | |/ _ \| | | |
+ \__ \  __/  __/ | |_| | (_) | |_| |
+ |___/\___|\___|  \__, |\___/ \__,_|
+  _               |___/             
+ | |__   ___ _ __ ___| |            
+ | '_ \ / _ \ '__/ _ \ |            
+ | | | |  __/ | |  __/_|            
+ |_| |_|\___|_|  \___(_)            
+                                    
+
+
+```
+
 [![Twitter Badge](https://img.shields.io/twitter/follow/Vinit_Shahdeo.svg?style=social)](https://twitter.com/Vinit_Shahdeo)
 [![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow%20@vinitshahdeo&style=social)](https://github.com/vinitshahdeo/)

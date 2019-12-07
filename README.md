@@ -38,7 +38,7 @@ This is a console application written in `Node.js`. This can be run in two modes
 
 Open terminal and navigate (`cd`) to this folder and type the following commands:
 
-```
+```bash
 1. npm install
 2. npm start
 ```
@@ -47,7 +47,7 @@ Open terminal and navigate (`cd`) to this folder and type the following commands
 
 Open terminal and type `node src/index.js data/input.txt`.
 
-```
+```terminal
 node src/index.js <path_to_file.txt>
 ```
 
@@ -79,7 +79,7 @@ Users can interact with the Parking Lot system via a following simple set of com
 
 - **status**: `status` will display cars and their slot details
 
-```
+```bash
 Slot No.  Registration No Color
 1         KA-01-HH-1234  White
 2         KA-01-HH-9999  Red

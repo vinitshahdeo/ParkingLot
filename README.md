@@ -112,6 +112,8 @@ Slot No.  Registration No Color
 
 ## Modules - OOPS Approach
 
+[![CodeFactor](https://www.codefactor.io/repository/github/vinitshahdeo/parkinglot/badge)](https://www.codefactor.io/repository/github/vinitshahdeo/parkinglot)
+
 There are two classes defined:
 
 `ParkingLot()`: It is the main class which is used to initialize a parking lot. In each parking lot there is maximum number of slots and an array of slots that will be occupied by the car. It has following methods:

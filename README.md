@@ -1,6 +1,6 @@
 # Parking Lot Problem
 
-[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/ParkingLot?logo=github)](https://github.com/vinitshahdeo/ParkingLot/blob/master/LICENSE) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/ParkingLot?logo=github)](https://github.com/vinitshahdeo/ParkingLot/) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vinitshahdeo/ParkingLot?logo=snyk&color=red)
+[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/ParkingLot?logo=github)](https://github.com/vinitshahdeo/ParkingLot/blob/master/LICENSE) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/ParkingLot?logo=github)](https://github.com/vinitshahdeo/ParkingLot/) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vinitshahdeo/ParkingLot?logo=snyk&color=red) [![Travis (.org)](https://img.shields.io/travis/vinitshahdeo/ParkingLot?logo=travis)](https://travis-ci.com/vinitshahdeo/ParkingLot/builds/139851721)
 
 ## About Problem
 

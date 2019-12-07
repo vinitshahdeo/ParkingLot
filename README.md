@@ -14,7 +14,7 @@ To **design a parking lot system** with ability to find:
 
 ## Pre requisites
 
-[![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/ParkingLot?label=NodeJS&logo=Node.js)](https://github.com/vinitshahdeo/ParkingLot/)
+[![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/ParkingLot?label=NodeJS&logo=Node.js)](https://github.com/vinitshahdeo/ParkingLot/) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/ParkingLot?logo=github&color=teal)](https://github.com/vinitshahdeo/ParkingLot/)
 
 The source code for this project is written using [Node.js](https://nodejs.org/). Make sure you have [Node.js](https://nodejs.org/) installed on your computer before running this application, **if not please install Node.js from [here](https://nodejs.org/en/download/)**.
 
@@ -244,6 +244,8 @@ Go to `out/` folder and open `global.html`. You'll find the documentation for th
 
 ## Dependencies Used
 
+[![Dev dependencies](https://img.shields.io/david/dev/vinitshahdeo/ParkingLot?logo=npm)](https://github.com/vinitshahdeo/ParkingLot/)
+
 - [Mocha](https://mochajs.org/): A JavaScript test framework for Node.js programs. Learn more [here](https://mochajs.org/).
 
 - [Chai](https://www.chaijs.com/): A BDD/TDD assertion library for Node.js and it can be paired with any JS testing framework. Learn more [here](https://www.chaijs.com/).
@@ -292,6 +294,8 @@ Open terminal and type the following:
 11. `node src/index.js data/input.txt` : Runs the application in file mode.
 
 ## Author
+
+[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/0)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/0)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/1)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/1)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/2)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/2)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/3)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/3)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/4)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/4)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/5)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/5)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/6)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/6)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/7)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/7)
 
 #### [Vinit Shahdeo](https://github.com/vinitshahdeo)
 

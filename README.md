@@ -1,7 +1,6 @@
 # Parking Lot Problem
 
-[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/ParkingLot?logo=github)](https://github.com/vinitshahdeo/ParkingLot/blob/master/LICENSE) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/ParkingLot?logo=github)](https://github.com/vinitshahdeo/ParkingLot/) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vinitshahdeo/ParkingLot?logo=snyk&color=red) [![Travis (.org)](https://img.shields.io/travis/vinitshahdeo/ParkingLot?logo=travis)](https://travis-ci.com/vinitshahdeo/ParkingLot/builds/139851721)
-
+[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/ParkingLot?logo=github)](https://github.com/vinitshahdeo/ParkingLot/blob/master/LICENSE) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/ParkingLot?logo=github)](https://github.com/vinitshahdeo/ParkingLot/) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vinitshahdeo/ParkingLot?logo=snyk&color=red) [![Travis (.org)](https://img.shields.io/travis/vinitshahdeo/ParkingLot?logo=travis)](https://travis-ci.com/vinitshahdeo/ParkingLot/builds/139851721) 
 ## About Problem
 
 To **design a parking lot system** with ability to find:
@@ -14,7 +13,8 @@ To **design a parking lot system** with ability to find:
 
 ## Pre requisites
 
-[![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/ParkingLot?label=NodeJS&logo=Node.js)](https://github.com/vinitshahdeo/ParkingLot/) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/ParkingLot?logo=github&color=teal)](https://github.com/vinitshahdeo/ParkingLot/)
+[![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/ParkingLot?label=NodeJS&logo=Node.js)](https://github.com/vinitshahdeo/ParkingLot/) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/ParkingLot?logo=github&color=teal)](https://github.com/vinitshahdeo/ParkingLot/) [![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/vinitshahdeo/ParkingLot/master?logo=codefactor&logoColor=white)
+](https://github.com/vinitshahdeo/ParkingLot/)
 
 The source code for this project is written using [Node.js](https://nodejs.org/). Make sure you have [Node.js](https://nodejs.org/) installed on your computer before running this application, **if not please install Node.js from [here](https://nodejs.org/en/download/)**.
 

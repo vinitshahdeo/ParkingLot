@@ -1,6 +1,4 @@
-# [Gojek](https://www.gojek.io/) Assignment - Parking Lot Problem
-
-![Gojek logo](https://www.gojek.io/images/gojek-logo.png)
+# Parking Lot Problem
 
 ## About Problem
 
@@ -292,67 +290,6 @@ Open terminal and type the following:
 ## Author
 
 #### [Vinit Shahdeo](https://github.com/vinitshahdeo)
-
-**Brief Introduction**
-
-Technology never scares, it always attracts! Passionate about simplifying things through technology.
-Proficient in **Data Structures** and **Algorithms** and love to solve problems that involve creativity and innovation.
-Over and above, I possess accountable knowledge of **OOPs** concepts. Entered this world as a fresher, made significant progress in self-learning new technologies at a faster pace of time and implementing them in the projects.
-
-> [My Internship experience at Postman](https://medium.com/@vinitshahdeo/software-engineering-internship-experience-at-postman-182df16ef33f)
-
-Currently I am working as a **Software Engineer** at [Postman](). I work with all kinds of modern JavaScript (React, Node.js etc).
-
-My charitable motivation, coupled with a passion for what I am doing, inspires me for open source. I am addicted to green dots on GitHub. **Here's the [link](https://github.com/vinitshahdeo) to my GitHub profile.** I contribute to the following orgs:
-
-- [Codeuino](https://github.com/codeuino/)
-- [CodeChef VIT](https://github.com/codechefvit)
-- [Systers](https://github.com/systers)
-- [VinnovateIT](https://github.com/vinnovateit)
-
-I'm super excited to explore opportunities with **Gojek**. Find me on [LinkedIn](https://www.linkedin.com/in/vinitshahdeo/).
-
-**Email:** [vinitshahdeo@gmail.com](mailto:vinitshahdeo@gmail.com)
-
----
-
-```
- _____ _                 _     __   __
-|_   _| |               | |    \ \ / /
-  | | | |__   __ _ _ __ | | __  \ V /___  _   _
-  | | | '_ \ / _` | '_ \| |/ /   \ // _ \| | | |
-  | | | | | | (_| | | | |   <    | | (_) | |_| |
-  \_/ |_| |_|\__,_|_| |_|_|\_\   \_/\___/ \__,_|
-
-
- _____       _      _
-|  __ \     (_)    | |
-| |  \/ ___  _  ___| | __
-| | __ / _ \| |/ _ \ |/ /
-| |_\ \ (_) | |  __/   <
- \____/\___/| |\___|_|\_\
-           _/ |
-          |__/
-______           _   _     _
-|  ___|         | | | |   (_)
-| |_ ___  _ __  | |_| |__  _ ___
-|  _/ _ \| '__| | __| '_ \| / __|
-| || (_) | |    | |_| | | | \__ \
-\_| \___/|_|     \__|_| |_|_|___/
-
-
- _____                        _               _ _
-|  _  |                      | |             (_) |
-| | | |_ __  _ __   ___  _ __| |_ _   _ _ __  _| |_ _   _
-| | | | '_ \| '_ \ / _ \| '__| __| | | | '_ \| | __| | | |
-\ \_/ / |_) | |_) | (_) | |  | |_| |_| | | | | | |_| |_| |
- \___/| .__/| .__/ \___/|_|   \__|\__,_|_| |_|_|\__|\__, |
-      | |   | |                                      __/ |
-      |_|   |_|                                     |___/
-
-```
-
----
 
 [![Twitter Badge](https://img.shields.io/twitter/follow/Vinit_Shahdeo.svg?style=social)](https://twitter.com/Vinit_Shahdeo)
 [![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow%20@vinitshahdeo&style=social)](https://github.com/vinitshahdeo/)

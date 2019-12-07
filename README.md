@@ -112,7 +112,7 @@ Slot No.  Registration No Color
 
 ## Modules - OOPS Approach
 
-[![CodeFactor](https://www.codefactor.io/repository/github/vinitshahdeo/parkinglot/badge)](https://www.codefactor.io/repository/github/vinitshahdeo/parkinglot)
+[![CodeFactor](https://www.codefactor.io/repository/github/vinitshahdeo/parkinglot/badge)](https://www.codefactor.io/repository/github/vinitshahdeo/parkinglot) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/275124e731de4f48a7adac2e9984e59f)](https://www.codacy.com/manual/vinitshahdeo/ParkingLot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=vinitshahdeo/ParkingLot&amp;utm_campaign=Badge_Grade)
 
 There are two classes defined:
 

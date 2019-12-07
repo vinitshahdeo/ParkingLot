@@ -1,5 +1,7 @@
 # Parking Lot Problem
 
+[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/ParkingLot?logo=github)](https://github.com/vinitshahdeo/ParkingLot/blob/master/LICENSE) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/ParkingLot?logo=github)](https://github.com/vinitshahdeo/ParkingLot/) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vinitshahdeo/ParkingLot?logo=snyk&color=red)
+
 ## About Problem
 
 To **design a parking lot system** with ability to find:
@@ -11,6 +13,8 @@ To **design a parking lot system** with ability to find:
 - Slot numbers of all slots where a car of a particular colour is parked.
 
 ## Pre requisites
+
+[![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/ParkingLot?label=NodeJS&logo=Node.js)](https://github.com/vinitshahdeo/ParkingLot/)
 
 The source code for this project is written using [Node.js](https://nodejs.org/). Make sure you have [Node.js](https://nodejs.org/) installed on your computer before running this application, **if not please install Node.js from [here](https://nodejs.org/en/download/)**.
 

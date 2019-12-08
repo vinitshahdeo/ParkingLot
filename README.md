@@ -295,6 +295,14 @@ Open terminal and type the following:
 
 11. `node src/index.js data/input.txt` : Runs the application in file mode.
 
+## Need help?
+
+![Twitter URL](https://img.shields.io/twitter/url?label=Tweet%20about%20this%20%E2%9D%A4%EF%B8%8F&logo=twitter&url=https%3A%2F%2Fgithub.com%2Fvinitshahdeo%2FParkingLot) [![GitHub stars](https://img.shields.io/github/stars/vinitshahdeo/ParkingLot?label=Star%20on%20GitHub&logo=github&style=social)](https://github.com/vinitshahdeo/ParkingLot/stargazers)
+
+Feel free to reach out to me via email. Shoot your doubts at [vinitshahdeo@gmail.com](mailto:vinitshahdeo@gmail.com?Subject=ParkingLot).
+
+> Glad to see you here! **Show some ❤️ by starring [this](https://github.com/vinitshahdeo/ParkingLot/) repository.**
+
 ## Author
 
 [![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/0)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/0)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/1)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/1)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/2)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/2)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/3)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/3)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/4)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/4)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/5)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/5)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/6)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/6)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/images/7)](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/ParkingLot/links/7)

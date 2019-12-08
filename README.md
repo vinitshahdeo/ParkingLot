@@ -1,6 +1,7 @@
 # Parking Lot Problem
 
-[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/ParkingLot?logo=github)](https://github.com/vinitshahdeo/ParkingLot/blob/master/LICENSE) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/ParkingLot?logo=github)](https://github.com/vinitshahdeo/ParkingLot/) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vinitshahdeo/ParkingLot?logo=snyk&color=red) [![Travis (.org)](https://img.shields.io/travis/vinitshahdeo/ParkingLot?logo=travis)](https://travis-ci.com/vinitshahdeo/ParkingLot/builds/139851721) 
+[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/ParkingLot?logo=github)](https://github.com/vinitshahdeo/ParkingLot/blob/master/LICENSE) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/ParkingLot?logo=github)](https://github.com/vinitshahdeo/ParkingLot/) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vinitshahdeo/ParkingLot?logo=snyk&color=red) [![Travis (.org)](https://img.shields.io/travis/vinitshahdeo/ParkingLot?logo=travis)](https://travis-ci.com/vinitshahdeo/ParkingLot/builds/139851721)
+
 ## About Problem
 
 To **design a parking lot system** with ability to find:
@@ -10,6 +11,8 @@ To **design a parking lot system** with ability to find:
 - Slot number in which a car with a given registration number is parked.
 
 - Slot numbers of all slots where a car of a particular colour is parked.
+
+[![Parking Lot](./assets/logo.png)](https://github.com/vinitshahdeo/ParkingLot/)
 
 ## Pre requisites
 

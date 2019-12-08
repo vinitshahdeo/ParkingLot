@@ -341,3 +341,6 @@ if (isAwesome) {
 ```
 
 -----------
+
+[![NETFLIX](https://forthebadge.com/images/badges/powered-by-netflix.svg)](https://github.com/vinitshahdeo) [![SMILE](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/vinitshahdeo) [![BUILT WITH LOVE](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/vinitshahde)
+

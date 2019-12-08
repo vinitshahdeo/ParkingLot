@@ -314,3 +314,17 @@ Feel free to reach out to me via email. Shoot your doubts at [vinitshahdeo@gmail
 
 [![Twitter Badge](https://img.shields.io/twitter/follow/Vinit_Shahdeo.svg?style=social)](https://twitter.com/Vinit_Shahdeo)
 [![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow%20@vinitshahdeo&style=social)](https://github.com/vinitshahdeo/)
+
+
+---------
+
+```javascript
+
+if (isAwesome) {
+    // thanks in advance :p
+    starThisRepository();
+}
+
+```
+
+-----------

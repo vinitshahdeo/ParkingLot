@@ -1,7 +1,7 @@
 {
   "name": "parking_lot",
   "version": "1.0.0",
-  "description": "[GOJEK Assignment] Parking lot design problem",
+  "description": "Parking lot design problem",
   "main": "index.js",
   "directories": {
     "test": "tests"

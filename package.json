@@ -35,6 +35,6 @@
     "parse-gitignore": "1.0.1",
     "pkg": "4.4.0",
     "recursive-readdir-synchronous": "0.0.4",
-    "shelljs": "0.8.3"
+    "shelljs": "0.8.5"
   }
 }
